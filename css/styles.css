@@ -59,13 +59,13 @@ header {
   color: #0065fc;
 }
 #logo {
-  margin-left: 70px;
+  margin-left: 60px;
   margin-bottom: 0px;
 }
 
 /*** section1 Recherche et Filtres***/
 #searchandfiltersection {
-  margin: 0px 20px;
+  margin: 15px 40px;
 }
 h1 {
   font-size: 20px;
@@ -221,12 +221,12 @@ form {
   font-weight: 900;
 }
 
-/***Les hébergements section2***/
+/***Les hébergements***/
 #rentsection {
-  margin: 0px 60px 0px 20px;
+  margin: 0px 40px 0px 40px;
 }
 #info {
-  margin: 15px 0px 25px 5px;
+  margin: 15px 0px 25px 10px;
   display: flex;
   align-items: center;
 }
@@ -253,10 +253,8 @@ form {
   margin-left: 16px;
 }
 
-/***Liste des hébergements***/
-#rentsection {
-  margin-left: 20px;
-}
+/***Les panneaux d'hébergement***/
+
 #boxgdfather {
   width: 100%;
   display: flex;
@@ -265,8 +263,8 @@ form {
 }
 #leftpanel {
   border-radius: 20px;
-  width: 61%;
-  height: 550px;
+  width: 63%;
+  height: 623px;
   padding: 20px;
   background-color: #f2f2f2;
   margin-right: 30px;
@@ -285,11 +283,11 @@ h3 {
   text-decoration: none;
   margin: 2%;
   width: 98%;
-  height: 180px;
+  height: 218px;
 }
 .whitecard {
   width: 100%;
-  height: 180px;
+  height: 218px;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 5px 15px 10px #e8effa;
@@ -301,7 +299,7 @@ h3 {
 }
 .stylimage {
   width: 97%;
-  height: 110px;
+  height: 131px;
   margin-top: 3px;
   margin-left: 1.5%;
   margin-bottom: 0px;
@@ -310,18 +308,18 @@ h3 {
   border-radius: 20px 20px 0px 0px;
 }
 h4 {
-  margin-top: 2px;
+  margin-top: 5px;
   margin-bottom: 0px;
   margin-left: 10px;
   font-family: raleway, sans-serif;
-  font-size: 13px;
+  font-size: 18px;
   color: #000000;
 }
 .fontcard1 {
   margin: 5px 0px 0px 0px;
   margin-left: 10px;
   font-family: raleway, sans-serif;
-  font-size: 10px;
+  font-size: 15px;
   color: #000000;
 }
 .stars1 {
@@ -329,13 +327,13 @@ h4 {
   margin-top: 0px;
 }
 .bluestars1 {
-  font-size: 9px;
+  font-size: 10px;
   padding: 3px;
   color: #0065fc;
   width: 2%;
 }
 .graystars1 {
-  font-size: 9px;
+  font-size: 10px;
   padding: 3px;
   color: rgb(183, 176, 176);
   width: 2%;
@@ -347,11 +345,14 @@ h4 {
 #linkdisplay:hover {
   text-shadow: 2px 0px 4px rgba(185, 185, 185, 0.99);
 }
+#nav2{
+  margin-top: 10px;
+}
 
 /***Panneau de droite Les plus populaires***/
 #rightpannel {
-  width: 29%;
-  height: 569px;
+  width: 31%;
+  height: 640px;
   padding: 20px 15px 0px 15px;
   margin-bottom: 0px;
   background-color: #f2f2f2;
@@ -375,20 +376,18 @@ h4 {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: stretch;
-  align-content: space-between;
-  height: 470px;
+  height: 560px;
 }
 .linkcard2 {
   text-decoration: none;
   margin: auto;
   width: 100%;
-  height: 120px;
+  height: 156px;
 }
 .rightcard {
   display: flex;
   width: 90%;
-  height: 120px;
+  height: 156px;
   margin: 0px 0px 0px 13px;
   background-color: #ffffff;
   border-radius: 20px;
@@ -400,37 +399,42 @@ h4 {
 }
 .stylimage2 {
   width: 45%;
-  height: 110px;
-  margin-top: 3px;
+  height: 145px;
+  margin-top: 4px;
   margin-left: 2%;
   margin-bottom: 0px;
   border-radius: 10px 0px 0px 10px;
   object-fit: cover;
 }
 .bis {
-  width: 65%;
-  height: 105px;
-}
-.fontcard2 {
-  margin-top: 7px;
-  margin-bottom: 23px;
-  margin-left: 10px;
-  font-family: raleway, sans-serif;
-  font-size: 10px;
-  color: #000000;
+  width: 60%;
+  height: 145px;
 }
 .textzone {
   padding-top: 13px;
   padding-left: 10px;
 }
+.fontcard2 {
+  margin-top: 7px;
+  margin-bottom: 14px;
+  margin-left: 10px;
+  font-family: raleway, sans-serif;
+  font-size: 15px;
+  color: #000000;
+}
+
+.rentag2{
+  font-size: 18px;
+  margin-top: 2px;
+}
 .bluestars2 {
-  font-size: 9px;
+  font-size: 10px;
   padding: 3px;
   color: #0065fc;
   width: 2%;
 }
 .graystars2 {
-  font-size: 9px;
+  font-size: 10px;
   padding: 3px;
   color: rgb(183, 176, 176);
   width: 2%;
@@ -438,7 +442,7 @@ h4 {
 
 /***Les Activités à Marseille ***/
 #activitiesection {
-  margin: 20px 0px 0px 0px;
+  margin: 20px 0px 0px 20px;
   padding: 0px 0px 0px 20px;
   width: 94.5%;
   position: relative;
@@ -606,7 +610,7 @@ h4 {
 footer {
   width: 100%;
   height: 250px;
-  margin: 65px 0px 0px -20px;
+  margin: 65px 0px 0px 0px;
   background-color: #f2f2f2;
   background-size: cover;
 
