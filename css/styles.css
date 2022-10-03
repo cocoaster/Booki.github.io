@@ -2,17 +2,19 @@
 * {
   box-sizing: inherit;
 }
-body {
+ html, body{
+  width: auto;
+    overflow-x: hidden;
+  height: auto;
   font-family: "Raleway", sans-serif;
-  margin: 0px;
-}
-section {
-  margin: 0px 50px 0px 50px;
+  
 }
 
 /***Onglets en haut à droite***/
 header {
   width: 100%;
+  max-width: none;
+  min-width: 400px;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -23,26 +25,30 @@ header {
   top: 0px;
   right: 0px;
   left: 0px;
+  overflow: hidden;
 }
 #navtab {
   list-style: none;
+  margin-top: 0px;
   margin-right: 0px;
+  overflow: hidden;
 }
 #tablist {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
   margin-top: 0px;
-  padding-top: 70px;
+  padding-top: 42px;
   margin-right: 0px;
 }
 .tabs {
   font-family: raleway, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   color: #000000;
-  padding: 65px 40px 0px 40px;
+  padding: 42px 40px 0px 40px;
   margin-right: 0px;
+  transition-delay: 250ms;
 }
 .tabs:hover {
   border-top: 4px solid #0065fc;
@@ -54,16 +60,19 @@ header {
 }
 #logo {
   margin-left: 70px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 /*** section1 Recherche et Filtres***/
+#searchandfiltersection {
+  margin: 0px 20px;
+}
 h1 {
-  font-size: 23px;
-  font-weight: 1500;
+  font-size: 20px;
+  font-weight: 900;
   margin-top: 45px;
   margin-bottom: 10px;
-  padding-top: 120px;
+  padding-top: 135px;
 }
 #subtitle {
   color: #292828;
@@ -78,12 +87,13 @@ h1 {
   align-items: center;
 }
 #locationsearch {
-  margin: 20 auto;
-  padding: 18px 50px 18px 20px;
+  margin: 20px 0px;
+  padding: 17px 50px 17px 17px;
   border-top: 0.5px solid #f2f2f2;
   border-bottom: 0.5px solid #f2f2f2;
   border-left: 0.5px solid #ffffff;
   border-right: 0.5px solid #ffffff;
+  transition-delay: 250ms;
 }
 #locationsearch:hover {
   box-shadow: -0.5px 0.5px 0.5px 2px #e8effa;
@@ -101,13 +111,13 @@ form input::placeholder {
   border-right: 0px solid #ffffff;
   padding-right: 100px;
   font-family: raleway, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 800;
   color: #000000;
   opacity: 1;
 }
 
-form input[type="submit"] {
+#searchtext {
   padding: 13px;
   font-family: raleway, sans-serif;
   font-size: 20px;
@@ -117,8 +127,9 @@ form input[type="submit"] {
   background-color: #0065fc;
   border-color: #0065fc;
   border-radius: 0px 18px 18px 0px;
+  transition-delay: 250ms;
 }
-form input[type="submit"]:hover {
+#searchtext:hover {
   box-shadow: 0px 0px 0px 1px #7e7cef;
   cursor: grab;
 }
@@ -133,6 +144,12 @@ form {
 #filters {
   display: flex;
   align-items: center;
+  margin-left: 6px;
+}
+#filterstitle {
+  font-family: raleway, sans-serif;
+  font-size: 17px;
+  font-weight: 800;
 }
 #choices {
   width: 100%;
@@ -143,54 +160,56 @@ form {
   width: auto;
   margin-left: 25px;
   position: relative;
-  padding: 10px 18px 10px 60px;
+  padding: 10px 20px 10px 57px;
   border: 3px solid #dedcdc;
   border-radius: 50px;
+  transition-delay: 250ms;
 }
 .container:hover {
-  box-shadow: -1px 1px 1px 2px #e8effa;
-  border: 2px solid #dedcdc;
+  box-shadow: -1px 1px 3px 3px #e8effa;
+  border: 3px solid #dedcdc;
 }
 .icons {
   color: #0065fc;
   position: absolute;
-  left: -2px;
-  top: -1px;
+  left: -3px;
+  top: -3px;
 }
 .circle1 {
-  width: 46px;
-  height: 46px;
+  width: 47px;
+  height: 47px;
   position: relative;
   background-color: #deebff;
   border-radius: 50px;
+  transition-delay: 250ms;
 }
 .circle1:hover {
   box-shadow: -1px 1px 1px 2px #e8effa;
   color: #448cf8;
 }
 .size1 {
-  font-size: 17px;
+  font-size: 7px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
 }
 .size2 {
-  font-size: 20px;
+  font-size: 10px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
 }
 .size3 {
-  font-size: 18px;
+  font-size: 8px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
 }
 .size4 {
-  font-size: 18px;
+  font-size: 8px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -198,16 +217,20 @@ form {
 }
 .boldfont {
   font-family: raleway, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 900;
 }
 
 /***Les hébergements section2***/
+#rentsection {
+  margin: 0px 60px 0px 20px;
+}
 #info {
-  margin: 15px 0px 25px 10px;
+  margin: 15px 0px 25px 5px;
   display: flex;
   align-items: center;
 }
+
 #circle2 {
   width: 25px;
   height: 25px;
@@ -226,97 +249,96 @@ form {
 }
 #note {
   font-family: raleway, sans-serif;
-  font-size: 18px;
-  margin-left: 15px;
+  font-size: 14px;
+  margin-left: 16px;
 }
 
 /***Liste des hébergements***/
+#rentsection {
+  margin-left: 20px;
+}
 #boxgdfather {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 #leftpanel {
   border-radius: 20px;
-  width: 62%;
-  height: 650px;
-  padding: 2%;
+  width: 61%;
+  height: 550px;
+  padding: 20px;
   background-color: #f2f2f2;
+  margin-right: 30px;
 }
 h3 {
-  margin-left: 3%;
+  margin-left: 15px;
   font-family: raleway, sans-serif;
-  font-size: 23px;
+  font-size: 20px;
 }
 .lign {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 .linkcard {
   text-decoration: none;
   margin: 2%;
   width: 98%;
-  height: 200px;
+  height: 180px;
 }
 .whitecard {
   width: 100%;
-  height: 200px;
+  height: 180px;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 5px 15px 10px #e8effa;
-  transition-delay: 0.3s ease-in-out;
+  transition-delay: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 .whitecard:hover {
   box-shadow: 0px 2px 5px 3px #cbcaca;
 }
 .stylimage {
   width: 97%;
-  height: 130px;
+  height: 110px;
   margin-top: 3px;
   margin-left: 1.5%;
   margin-bottom: 0px;
   border-radius: 10px 10px 0px 0px;
   object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
 }
 h4 {
   margin-top: 2px;
   margin-bottom: 0px;
   margin-left: 10px;
   font-family: raleway, sans-serif;
-  font-size: 0.97rem;
+  font-size: 13px;
   color: #000000;
 }
 .fontcard1 {
-  margin: 0px;
+  margin: 5px 0px 0px 0px;
   margin-left: 10px;
   font-family: raleway, sans-serif;
-  font-size: 0.83rem;
+  font-size: 10px;
   color: #000000;
 }
 .stars1 {
   margin-left: 7px;
   margin-top: 0px;
 }
-.bluestars {
-  font-size: 12px;
+.bluestars1 {
+  font-size: 9px;
   padding: 3px;
   color: #0065fc;
   width: 2%;
 }
-.graystars {
-  font-size: 12px;
+.graystars1 {
+  font-size: 9px;
   padding: 3px;
   color: rgb(183, 176, 176);
   width: 2%;
-}
-h5 {
-  margin-left: 3%;
-  margin-top: 33px;
-  font-family: raleway, sans-serif;
-  font-size: 18px;
-  color: #000000;
 }
 #linkdisplay {
   text-decoration: none;
@@ -328,32 +350,25 @@ h5 {
 
 /***Panneau de droite Les plus populaires***/
 #rightpannel {
-  width: 31%;
-  height: 682px;
-  padding-top: 23.9px;
+  width: 29%;
+  height: 569px;
+  padding: 20px 15px 0px 15px;
   margin-bottom: 0px;
   background-color: #f2f2f2;
   border-radius: 20px;
-  padding-bottom: 0px;
 }
 #titlezone {
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 13px;
-  margin-right: 40px;
-  padding-left: 30px;
-}
-h6 {
-  height: 27px;
-  margin: 36px 0px 23px 0px;
-  font-family: raleway, sans-serif;
-  font-size: 23px;
+  margin-bottom: 0px;
+  margin-right: 30px;
+  padding-left: 10px;
 }
 .blackstar {
   position: absolute;
   right: 0px;
-  font-size: 20px;
+  font-size: 17px;
 }
 #blocimg {
   display: flex;
@@ -361,97 +376,141 @@ h6 {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: stretch;
-  align-content: space-around;
-  height: 555px;
+  align-content: space-between;
+  height: 470px;
 }
 .linkcard2 {
   text-decoration: none;
-  margin: 2%;
+  margin: auto;
   width: 100%;
-  height: 158px;
+  height: 120px;
 }
 .rightcard {
   display: flex;
   width: 90%;
-  height: 158px;
+  height: 120px;
   margin: 0px 0px 0px 13px;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 1px 1px 1px #e8effa;
+  transition-delay: 250ms;
 }
 .rightcard:hover {
   box-shadow: 0px 2px 5px 3px #cbcaca;
 }
 .stylimage2 {
   width: 45%;
-  height: 150px;
+  height: 110px;
   margin-top: 3px;
   margin-left: 2%;
   margin-bottom: 0px;
   border-radius: 10px 0px 0px 10px;
   object-fit: cover;
 }
+.bis {
+  width: 65%;
+  height: 105px;
+}
 .fontcard2 {
   margin-top: 7px;
-  margin-bottom: 53px;
+  margin-bottom: 23px;
   margin-left: 10px;
   font-family: raleway, sans-serif;
-  font-size: 0.83rem;
+  font-size: 10px;
   color: #000000;
 }
 .textzone {
   padding-top: 13px;
   padding-left: 10px;
 }
+.bluestars2 {
+  font-size: 9px;
+  padding: 3px;
+  color: #0065fc;
+  width: 2%;
+}
+.graystars2 {
+  font-size: 9px;
+  padding: 3px;
+  color: rgb(183, 176, 176);
+  width: 2%;
+}
 
 /***Les Activités à Marseille ***/
-h7 {
+#activitiesection {
+  margin: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 20px;
+  width: 94.5%;
+  position: relative;
+  display: inline-block;
+}
+
+#marker {
+  display: inline-block;
+  position: absolute;
+  top: -145px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1;
+}
+#activityheading {
+  margin-top: 50px;
   font-family: raleway, sans-serif;
-  font-size: 23px;
+  font-size: 21px;
   font-weight: bolder;
   color: #000000;
+
+  margin-bottom: 30px;
 }
 #boxactivities {
+  width: auto;
   height: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+.tagactivity {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 15px;
 }
 
 /***box1***/
 .box1and3 {
-  width: 23%;
+  width: 22.5%;
   justify-content: center;
   display: flex;
 }
 .linkbox1and3 {
   text-decoration: none;
   width: 100%;
-  height: 400px;
+  height: 440px;
 }
 
 .whitecard2 {
   width: 100%;
-  height: 400px;
+  height: 440px;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 2px 10px 3px #e8effa;
+  transition-delay: 250ms;
 }
 .whitecard2:hover {
   box-shadow: 0px 2px 5px 3px #cbcaca;
 }
 .stylimage3 {
   width: 100%;
-  height: 350px;
-  border-radius: 10px 10px 0px 0px;
+  height: 370px;
+  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 
 /***box2***/
 .box2 {
-  width: 23%;
-  height: 400px;
+  width: 22.5%;
+  height: 440px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -460,59 +519,61 @@ h7 {
 #linkbox2top {
   text-decoration: none;
   width: 100%;
-  height: 210px;
+  height: 225px;
 }
 .whitecard3 {
   width: 100%;
-  height: 210px;
+  height: 225px;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 2px 10px 3px #e8effa;
+  transition-delay: 250ms;
 }
 .whitecard3:hover {
   box-shadow: 0px 2px 5px 3px #cbcaca;
 }
 .styleimage4 {
   width: 100%;
-  height: 160px;
-  border-radius: 10px 10px 0px 0px;
+  height: 175px;
+  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 /***img bas***/
 #linkbox2bottom {
   text-decoration: none;
   width: 100%;
-  height: 170px;
+  height: 185px;
 }
 .whitecard4 {
   width: 100%;
-  height: 170px;
+  height: 185px;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 2px 10px 3px #e8effa;
+  transition-delay: 250ms;
 }
 .whitecard4:hover {
   box-shadow: 0px 2px 5px 3px #cbcaca;
 }
 .stylimage5 {
   width: 100%;
-  height: 120px;
-  border-radius: 10px 10px 0px 0px;
+  height: 135px;
+  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 
 /***box3***/
 .stylimage3 {
   width: 100%;
-  height: 350px;
-  border-radius: 10px 10px 0px 0px;
+  height: 390px;
+  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 
 /***box4***/
 .box4 {
-  width: 23%;
-  height: 400px;
+  width: 22.5%;
+  height: 440px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -520,47 +581,58 @@ h7 {
 .linkbox4 {
   text-decoration: none;
   width: 100%;
-  height: 180px;
+  height: 210px;
 }
 /***img haut et bas***/
 .whitecard5 {
   width: auto;
-  height: 180px;
+  height: 210px;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 2px 10px 3px #e8effa;
+  transition-delay: 250ms;
 }
 .whitecard5:hover {
   box-shadow: 0px 2px 5px 3px #cbcaca;
 }
 .stylimage6 {
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
   width: 100%;
-  height: 130px;
+  height: 160px;
   object-fit: cover;
 }
 
 /***footer***/
 footer {
-  height: 200px;
-  margin-top: 65px;
+  width: 100%;
+  height: 250px;
+  margin: 65px 0px 0px -20px;
   background-color: #f2f2f2;
-  display: flex;
-  margin-left: 0px;
-  padding: 60px 20px 0px 20px;
+  background-size: cover;
+
+  padding: 30px 20px 10px 20px;
 }
-h8 {
-  font-size: 18px;
+#footercontainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.footerfont {
+  font-size: 15px;
   font-family: raleway, sans-serif;
   font-weight: bolder;
   color: #000000;
-  margin: 30px;
+  margin: 30px 30px 10px 30px;
 }
 .footerbox {
   display: block;
   position: relative;
-  width: auto;
+  max-width: 480px;
+  min-width: 227px;
   height: 200px;
+  margin-right: 20px;
+  padding-bottom: 40px;
+  padding-top: 0px;
 }
 .footerlist {
   display: block;
@@ -577,6 +649,7 @@ a {
 }
 .footerli {
   padding-bottom: 15px;
+  font-size: 14px;
 }
 
 /***media queries***/
@@ -636,6 +709,31 @@ a {
 
 /***pour les tablettes***/
 @media screen and (max-width: 992px) and (min-width: 768px) {
+ html,
+  body {
+    margin: 0px;
+    padding: 0px;
+   
+  }
+  header {
+    width: auto;
+    overflow: hidden;
+    padding-right: 0px;
+  }
+  #navtab {
+    width: 100%;
+
+  }
+
+  /***Recherche et filtres***/
+  #searchandfiltersection {
+    margin-left: 30px;
+    width: auto;
+    overflow: hidden;
+  }
+  #subtitle {
+    margin-left: 5px;
+  }
   #filterstitle {
     font-size: 18px;
   }
@@ -649,8 +747,8 @@ a {
   .icons {
     color: #0065fc;
     position: absolute;
-    left: -2px;
-    top: -1px;
+    left: -3px;
+    top: -2px;
   }
   .circle1 {
     width: 33px;
@@ -676,27 +774,83 @@ a {
     font-size: 10px;
   }
   .boldfont {
-    font-size: 10.5px;
+    font-size: 13px;
   }
+
+  /***hébergements***/
+  #rentsection {
+    margin: 0px 0px 0px 0px;
+   
+  }
+  #info {
+    margin: 15px 0px 0px 30px;
+  }
+
   #boxgdfather {
     width: 100%;
-    display: block;
+    flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin: 0px;
   }
   #leftpanel {
-    border-radius: 20px;
+    height: 580px;
+    border-radius: 0px;
     width: 100%;
-    height: 650px;
-    margin-bottom: 20px;
+    margin: 10px 0px 30px 0px;
+    padding: 24px 2px 0px 1px;
   }
+  h3 {
+    margin-left: 30px;
+  }
+  .lign {
+    width: 100%;
+    margin-bottom: 33px;
+  }
+  .linkcard {
+    padding: 0px;
+    margin: 0px;
+  }
+  .whitecard {
+    width: auto;
+    height: 180px;
+    margin: 20px;
+  }
+  #nav2{
+    margin-top: 60px;
+  }
+
   #rightpannel {
     width: 100%;
-    height: auto;
-    padding-top: 23.9px 40px 0px 40px;
+    height: 650px;
+    padding: 24px 40px 0px 10px;
     margin-bottom: 0px;
     background-color: #f2f2f2;
-    border-radius: 20px;
+    border-radius: 0px;
+  }
+  
+  #blocimg {
+    padding-left: 0px;
+  }
+ 
+
+  /***Activités***/
+  #activitiesection {
+    width: auto;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 100px 40px 0px 10px;
+  }
+   #titlezone {
+    padding-left: 0px;
+    margin-right: 90px;
+  }
+
+  #activityheading {
+    margin-top: 30px;
+    position: absolute;
+    top: 30px;
+    padding-left: 20px;
   }
   #boxactivities {
     height: auto;
@@ -705,6 +859,24 @@ a {
     justify-content: space-between;
     align-content: space-around;
     margin-top: 20px;
+    margin-left: 10px;
+    width: auto;
+    overflow: hidden;
+  }
+  .linkcard2 {
+    height: 150px;
+    margin: 15px 0px;
+  }
+  .rightcard {
+    height: 150px;
+  }
+  .stylimage2 {
+    height: 143px;
+    margin-left: 3px;
+    border-radius: 20px 0px 0px 20px;
+  }
+  .bis {
+    width: 45%;
   }
   .box1and3 {
     width: 45%;
@@ -714,99 +886,126 @@ a {
     width: 45%;
     margin-bottom: 20px;
   }
+  .whitecard3 {
+    height: 236px;
+  }
+  .styleimage4 {
+    height: 187px;
+  }
+
   .box4 {
     width: 45%;
     margin-bottom: 20px;
   }
 
+  /***footer***/
   footer {
     margin-top: 65px;
+    margin-left: 0px;
     justify-content: space-around;
-    padding: 60px 25px 0px 35px;
+    padding: 60px 40px 0px 0px;
+    width: auto;
+    overflow: hidden;
   }
+  .footerbox {
+    margin-left: 0px;
+    margin-right: 88px;
+  }
+
 }
 
 /**********pour les iphone8*********/
 @media screen and (max-width: 768px) {
   /***header***/
+
+  html,
   body {
-    width: 100%;
     margin: 0px;
-    right: 0px;
+    padding: 0px;
+    max-width: 100%;
   }
   header {
     flex-direction: column-reverse;
     padding: 0px;
     margin-right: 0px;
+    width: auto;
   }
   #logo {
     margin: 20px auto;
     align-items: center;
   }
   #tablist {
+    width: auto;
     padding: 5px 0px 0px 0px;
   }
   #tablist li {
     text-align: center;
-    width: 100%;
+    width: 90%;
   }
   #tablist a {
     display: block;
     min-height: 100%;
-    padding: 4px 10px;
+    padding: 4px 0px;
     border-bottom: 4px solid #f2f2f2;
   }
   #tablist a:hover {
     border-top-style: none;
     border-bottom: 4px solid #0065fc;
   }
-  section {
-    padding: 0px;
-    margin: 0px;
+  #li2 {
+    justify-content: center;
   }
-  h1 {
-    font-size: 28px;
-    margin-left: 40px;
-  }
-  #subtitle {
-    font-size: 16px;
-    margin-left: 40px;
+  .tabs {
+    padding-left: 0px;
   }
   /***Recherche et filtres***/
-  section {
-    padding: auto;
+  #searchandfiltersection {
+    width: auto;
+    margin: 0px 0px;
+    overflow: hidden;
   }
-  form {
-    display: inline-block;
+  h1 {
+    font-size: 25px;
+    margin-left: 19px;
+  }
+  #subtitle {
+    font-size: 17px;
+    margin-left: 19px;
+    margin-top: 10px;
+  }
+  #searchbar {
     position: relative;
-    margin-left: 40px;
+    margin-left: 18px;
+    margin-bottom: 0px;
+    width: 87%;
+    justify-content: center;
   }
-  #locationicon { 
-    padding: 16px;
+
+  #locationicon {
+    padding: 14px 17px;
   }
   #locationsearch {
-    padding: 18px;
-    padding-left: 13px;
-    size: 30px;
+    width: 80%;
+    padding: 14px 0px 14px 17px;
   }
   form input::placeholder {
-    font-size: 20px;
-    padding-right: 30px;
+    font-size: 19px;
+    padding-right: 0px;
   }
   #searchtext {
     display: none;
   }
   #iconsearch {
-    position: absolute;
-    right: 20px;
-    display: block;
-    padding: 13px;
-    font-size: 20px;
     text-decoration: none;
+    display: block;
+    position: absolute;
+    right: -15px;
+    font-size: 14px;
+    padding: 16.5px 16px;
     color: #ffffff;
     background-color: #0065fc;
     border-color: #0065fc;
-    border-radius: 17px 17px 17px 17px;
+    border-radius: 14px;
   }
   #iconsearch:hover {
     box-shadow: 1px 1px 2px #0065fc;
@@ -814,10 +1013,13 @@ a {
   }
   /***Les filtres***/
   h2 {
-    margin-left: 30px;
+    margin-left: 20px;
   }
   #filters {
+    width: auto;
     display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
   #choices {
     display: flex;
@@ -825,7 +1027,7 @@ a {
     margin-right: 20px;
   }
   .container {
-    margin-bottom: 15px;
+    margin: 0px 0px 15px 20px;
     padding-right: 10px;
     width: fit-content;
   }
@@ -833,19 +1035,34 @@ a {
     top: -1px;
     left: -1px;
     padding: 3px;
+    width: 38px;
+    height: 38px;
   }
   .boldfont {
     padding-right: 10px;
-    font-size: 14px;
+    font-size: 18px;
   }
 
   /***Les hébergements***/
+  #rentsection {
+    width: auto;
+    overflow: hidden;
+    margin: 0px auto;
+  }
   #info {
-    margin-left: 30px;
+    margin-left: 20px;
+  }
+  #circle2 {
+    width: 35px;
+  }
+  #symbolinfo {
+    padding: 7px;
+  }
+  #note {
+    font-size: 15px;
+    margin-right: 16px;
   }
   #boxgdfather {
-    width: 100%;
-    display: flex;
     flex-direction: column-reverse;
     margin-bottom: 20px;
     margin-left: 0px;
@@ -853,74 +1070,148 @@ a {
   /***Les plus populaires***/
 
   #rightpannel {
-    width: 100%;
+    width: 90%;
+    flex: 0;
     height: auto;
-    padding: 23.9px 10px 30px 5px;
-    margin-bottom: 0px;
+    padding: 23.9px 30px 30px 17px;
+    margin: 0px;
     border-radius: 0px;
-  } 
-  .whitecard {
+    background-size: cover;
+  }
+  .blackstar {
+    right: -30px;
+  }
+  #blocimg {
+    justify-content: center;
+  }
+  .rightcard {
     margin-bottom: 0px;
+    width: auto;
+    height: 137px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 18px;
     box-shadow: 1px 1px 12px 3px #f9fbfe;
   }
+  .stylimage2 {
+    margin-bottom: 4px;
+    margin-top: 4px;
+    margin-left: 4px;
+    border-radius: 18px 0px 0px 18px;
+    height: 129px;
+    width: 34%;
+  }
+  .rentag2 {
+    font-size: 20px;
+  }
+  .fontcard2 {
+    font-size: 17px;
+  }
+  .bluestars2 {
+    padding: 4px;
+    font-size: 15px;
+    color: #0065fc;
+  }
+  .graystars2 {
+    padding: 4px;
+    font-size: 15px;
+    color: rgb(183, 176, 176)
+  }
+
 
   /***Panneau de gauche Les hébergements***/
-  h7 {
-    margin-top: 30px;
+  h3 {
+    margin: 0px;
   }
   #leftpanel {
     width: 90%;
     height: auto;
-    margin: 0px 20px 0px 10px;
     background: none;
   }
   .lign {
     display: block;
-    margin: 0px 0px 0px 10px;
+    height: 635px;
   }
   .linkcard2 {
-    margin-bottom: 0px;
+    margin: auto;
+  }
+  .whitecard {
+    height: 195px;
+    box-shadow: 0px 5px 5px 2px #e8effa;
+  }
+  #nav2 {
+    margin: 30px 0px 0px 0px;
+  }
+  .rentag1 {
+    font-size: 18px;
+  }
+  .fontcard1 {
+    font-size: 15.7px;
+    margin-bottom: 5px;
+  }
+  .bluestars1 {
+    padding: 2px;
+    font-size: 12px;
+    color: #0065fc;
+  }
+  .graystars1 {
+    padding: 2px;
+    font-size: 12px;
+    color:rgb(183, 176, 176);
   }
 
   /***Les activités***/
-  h7 {
-    margin-left: 30px;
+  #activitiesection {
+    width: 99.8%;
+    padding: 0px;
+    overflow: hidden;
+  }
+  #activityheading {
+    margin-left: 20px;
   }
   #boxactivities {
+    
     display: block;
     height: auto;
-    margin: 20px 30px;
+    margin: 20px auto;
+    padding: 10px 0px 20px 0px;
   }
   .linkbox1and3 {
-    height: 170px;
+    height: 210px;
   }
   .box1and3 {
-    width: 100%;
+    width: auto;
     height: auto;
     margin-bottom: 20px;
   }
   .whitecard2 {
-    height: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 210px;
   }
   .stylimage3 {
-    height: 130px;
+    width: 100%;
+    height: 156px;
   }
   /***box 2***/
   .box2 {
-    width: 100%;
+    width: auto;
     height: auto;
     margin-bottom: 20px;
   }
   /***image haut***/
   #linkbox2top {
     text-decoration: none;
-    width: 100%;
-    height: 170px;
+    width: auto;
+    height: 180px;
     margin-bottom: 20px;
   }
   .whitecard3 {
-    width: 100%;
-    height: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 180px;
     margin-bottom: 20px;
   }
   .styleimage4 {
@@ -929,31 +1220,60 @@ a {
   }
   /***image bas***/
   .whitecard4 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     margin-bottom: 20px;
-    height: 170;
+    height: 183px;
   }
   .stylimage5 {
     width: 100%;
-    height: 130px;
+    height: 135px;
   }
   /***box4***/
   .box4 {
-    width: 100%;
+    width: auto;
     height: auto;
   }
   .linkbox4 {
-    height: 170px;
+    height: 210px;
     margin-bottom: 20px;
   }
   .whitecard5 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     margin-bottom: 20px;
-    height: 170px;
+    height: 210px;
+  }
+  .tagactivity {
+    font-size: 17px;
   }
   /***footer***/
   footer {
-    width: 100%;
-    margin-top: 40px;
-    display: block;
+    width: auto;
+    overflow: hidden;
+    height:fit-content;
+  }
+  #footercontainer {
+    flex-direction: column;
     height: auto;
+  }
+  .footerbox {
+    margin-right: 20px;
+    padding-bottom: 0px;
+    height: auto;
+  }
+  .footerfont {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .footerlist {
+    padding-bottom: 0px;
+    padding-left: 10px;
+  }
+  .footerli{
+    font-size: 20px;
+    margin-bottom: auto;
   }
 }
