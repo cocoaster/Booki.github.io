@@ -2,12 +2,12 @@
 * {
   box-sizing: inherit;
 }
- html, body{
+html,
+body {
   width: auto;
-    overflow-x: hidden;
+  overflow-x: hidden;
   height: auto;
   font-family: "Raleway", sans-serif;
-  
 }
 
 /***Onglets en haut à droite***/
@@ -16,7 +16,7 @@ header {
   max-width: none;
   min-width: 400px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   z-index: 1;
   background-color: #ffffff;
@@ -26,6 +26,11 @@ header {
   right: 0px;
   left: 0px;
   overflow: hidden;
+}
+#logo {
+  margin-top: 37px;
+  margin-left: 50px;
+  margin-bottom: 0px;
 }
 #navtab {
   list-style: none;
@@ -58,19 +63,15 @@ header {
   border-top: 4px solid #0065fc;
   color: #0065fc;
 }
-#logo {
-  margin-left: 60px;
-  margin-bottom: 0px;
-}
 
 /*** section1 Recherche et Filtres***/
 #searchandfiltersection {
-  margin: 15px 40px;
+  margin: 0px 40px 15px 40px;
 }
 h1 {
   font-size: 20px;
   font-weight: 900;
-  margin-top: 45px;
+  margin-top: 0px;
   margin-bottom: 10px;
   padding-top: 135px;
 }
@@ -116,7 +117,6 @@ form input::placeholder {
   color: #000000;
   opacity: 1;
 }
-
 #searchtext {
   padding: 13px;
   font-family: raleway, sans-serif;
@@ -230,7 +230,6 @@ form {
   display: flex;
   align-items: center;
 }
-
 #circle2 {
   width: 25px;
   height: 25px;
@@ -253,7 +252,7 @@ form {
   margin-left: 16px;
 }
 
-/***Les panneaux d'hébergement***/
+/***Les panneaux de gauche***/
 
 #boxgdfather {
   width: 100%;
@@ -279,25 +278,26 @@ h3 {
   justify-content: space-around;
   margin-bottom: 0px;
 }
-.linkcard {
+.leftlinkcard {
   text-decoration: none;
-  margin: 2%;
-  width: 98%;
-  height: 218px;
+  margin: 1%;
+  width: 99%;
+  height: auto;
 }
-.whitecard {
+.leftcard {
   width: 100%;
-  height: 218px;
+  height: auto;
+  padding-bottom: 13px;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 5px 15px 10px #e8effa;
   transition-delay: 0.3s;
   transition-timing-function: ease-in-out;
 }
-.whitecard:hover {
+.leftcard:hover {
   box-shadow: 0px 2px 5px 3px #cbcaca;
 }
-.stylimage {
+.leftstylimage {
   width: 97%;
   height: 131px;
   margin-top: 3px;
@@ -315,26 +315,26 @@ h4 {
   font-size: 18px;
   color: #000000;
 }
-.fontcard1 {
-  margin: 5px 0px 0px 0px;
+.leftfontcard {
+  margin: 5px 0px 5px 0px;
   margin-left: 10px;
   font-family: raleway, sans-serif;
   font-size: 15px;
   color: #000000;
 }
-.stars1 {
+.leftstars {
   margin-left: 7px;
   margin-top: 0px;
 }
 .bluestars1 {
-  font-size: 10px;
-  padding: 3px;
+  font-size: 12px;
+  padding: 2px;
   color: #0065fc;
   width: 2%;
 }
 .graystars1 {
-  font-size: 10px;
-  padding: 3px;
+  font-size: 12px;
+  padding: 2px;
   color: rgb(183, 176, 176);
   width: 2%;
 }
@@ -345,11 +345,11 @@ h4 {
 #linkdisplay:hover {
   text-shadow: 2px 0px 4px rgba(185, 185, 185, 0.99);
 }
-#nav2{
-  margin-top: 10px;
+#display {
+  margin-top: 35px;
 }
 
-/***Panneau de droite Les plus populaires***/
+/***Panneau de droite***/
 #rightpannel {
   width: 31%;
   height: 640px;
@@ -378,7 +378,7 @@ h4 {
   justify-content: space-between;
   height: 560px;
 }
-.linkcard2 {
+.rightlinkcard {
   text-decoration: none;
   margin: auto;
   width: 100%;
@@ -397,45 +397,51 @@ h4 {
 .rightcard:hover {
   box-shadow: 0px 2px 5px 3px #cbcaca;
 }
-.stylimage2 {
-  width: 45%;
-  height: 145px;
+.imgzone {
+  width: 37%;
+}
+.rightstylimage {
+  max-width: 100%;
+  min-width: 100%;
+  height: 147px;
   margin-top: 4px;
-  margin-left: 2%;
+  margin-left: 4%;
   margin-bottom: 0px;
   border-radius: 10px 0px 0px 10px;
   object-fit: cover;
 }
-.bis {
-  width: 60%;
-  height: 145px;
-}
 .textzone {
   padding-top: 13px;
-  padding-left: 10px;
+  padding-left: 25px;
+  width: 60%;
+  position: relative;
 }
-.fontcard2 {
+.rightfontcard {
   margin-top: 7px;
-  margin-bottom: 14px;
+  margin-bottom: 35px;
   margin-left: 10px;
   font-family: raleway, sans-serif;
   font-size: 15px;
   color: #000000;
 }
-
-.rentag2{
-  font-size: 18px;
+.rightrentag {
+  font-size: 20px;
   margin-top: 2px;
 }
+.rightstars {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+}
 .bluestars2 {
-  font-size: 10px;
-  padding: 3px;
+  font-size: 13px;
+  padding: 4px;
   color: #0065fc;
   width: 2%;
 }
 .graystars2 {
-  font-size: 10px;
-  padding: 3px;
+  font-size: 13px;
+  padding: 4px;
   color: rgb(183, 176, 176);
   width: 2%;
 }
@@ -448,11 +454,10 @@ h4 {
   position: relative;
   display: inline-block;
 }
-
 #marker {
   display: inline-block;
   position: absolute;
-  top: -145px;
+  top: -90px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -467,9 +472,9 @@ h4 {
 
   margin-bottom: 30px;
 }
-#boxactivities {
+#parentboxactivities {
   width: auto;
-  height: 400px;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -477,66 +482,63 @@ h4 {
 }
 .tagactivity {
   margin-top: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-left: 15px;
 }
 
-/***box1***/
-.box1and3 {
-  width: 22.5%;
-  justify-content: center;
+/***box1 et 3 ***/
+.childboxactivities {
+  width: 23%;
+  height: 445px;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .linkbox1and3 {
   text-decoration: none;
   width: 100%;
-  height: 440px;
+  height: auto;
 }
-
-.whitecard2 {
+.box1and3card {
   width: 100%;
-  height: 440px;
+  height: auto;
+  padding-bottom: 9px;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 2px 10px 3px #e8effa;
   transition-delay: 250ms;
 }
-.whitecard2:hover {
+.box1and3card:hover {
   box-shadow: 0px 2px 5px 3px #cbcaca;
 }
-.stylimage3 {
+.stylimagebox1and3 {
   width: 100%;
-  height: 370px;
+  height: 390px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 
 /***box2***/
-.box2 {
-  width: 22.5%;
-  height: 440px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 /***img haut***/
 #linkbox2top {
   text-decoration: none;
   width: 100%;
-  height: 225px;
+  height: auto;
+  margin-bottom: 15px;
 }
-.whitecard3 {
+.box2cardtop {
   width: 100%;
-  height: 225px;
+  height: auto;
+  padding-bottom: 9px;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 2px 10px 3px #e8effa;
   transition-delay: 250ms;
 }
-.whitecard3:hover {
+.box2cardtop:hover {
   box-shadow: 0px 2px 5px 3px #cbcaca;
 }
-.styleimage4 {
+.stylebox2topimage {
   width: 100%;
   height: 175px;
   border-radius: 20px 20px 0px 0px;
@@ -546,63 +548,50 @@ h4 {
 #linkbox2bottom {
   text-decoration: none;
   width: 100%;
-  height: 185px;
+  height: auto;
 }
-.whitecard4 {
+.box2cardbottom {
   width: 100%;
-  height: 185px;
+  height: auto;
+  padding-bottom: 9px;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 2px 10px 3px #e8effa;
   transition-delay: 250ms;
 }
-.whitecard4:hover {
+.box2cardbottom:hover {
   box-shadow: 0px 2px 5px 3px #cbcaca;
 }
-.stylimage5 {
+.stylebox2bottomimage {
   width: 100%;
-  height: 135px;
-  border-radius: 20px 20px 0px 0px;
-  object-fit: cover;
-}
-
-/***box3***/
-.stylimage3 {
-  width: 100%;
-  height: 390px;
+  height: 116px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 
 /***box4***/
-.box4 {
-  width: 22.5%;
-  height: 440px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 .linkbox4 {
   text-decoration: none;
   width: 100%;
-  height: 210px;
+  height: auto;
 }
 /***img haut et bas***/
-.whitecard5 {
+.box4card {
   width: auto;
-  height: 210px;
+  height: auto;
+  padding-bottom: 9px;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 2px 10px 3px #e8effa;
   transition-delay: 250ms;
 }
-.whitecard5:hover {
+.box4card:hover {
   box-shadow: 0px 2px 5px 3px #cbcaca;
 }
-.stylimage6 {
+.stylimagebox4 {
   border-radius: 20px 20px 0px 0px;
   width: 100%;
-  height: 160px;
+  height: 145px;
   object-fit: cover;
 }
 
@@ -657,8 +646,8 @@ a {
 }
 
 /***media queries***/
-/***pour les ordis en-dessous de 1125px***/
-@media screen and (max-width: 1125px) {
+/***pour les ordis en-dessous de 1315px***/
+@media screen and (max-width: 1315px) {
   .icons {
     color: #0065fc;
     position: absolute;
@@ -709,15 +698,29 @@ a {
     font-size: 15px;
     font-weight: 900;
   }
+  .leftrentag {
+    font-size: 13px;
+  }
+  .leftfontcard {
+    font-size: 13px;
+  }
+  .rightrentag {
+    font-size: 13px;
+  }
+  .rightfontcard {
+    font-size: 13px;
+  }
+  .tagactivity {
+    font-size: 13px;
+  }
 }
 
 /***pour les tablettes***/
 @media screen and (max-width: 992px) and (min-width: 768px) {
- html,
+  html,
   body {
     margin: 0px;
     padding: 0px;
-   
   }
   header {
     width: auto;
@@ -726,7 +729,6 @@ a {
   }
   #navtab {
     width: 100%;
-
   }
 
   /***Recherche et filtres***/
@@ -780,24 +782,23 @@ a {
   .boldfont {
     font-size: 13px;
   }
-
   /***hébergements***/
   #rentsection {
     margin: 0px 0px 0px 0px;
-   
   }
   #info {
     margin: 15px 0px 0px 30px;
   }
-
   #boxgdfather {
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
     margin: 0px;
   }
+
+  /***Panneau de gauche***/
   #leftpanel {
-    height: 580px;
+    height: auto;
     border-radius: 0px;
     width: 100%;
     margin: 10px 0px 30px 0px;
@@ -810,19 +811,24 @@ a {
     width: 100%;
     margin-bottom: 33px;
   }
-  .linkcard {
+  .leftlinkcard {
     padding: 0px;
     margin: 0px;
   }
-  .whitecard {
+  .leftcard {
     width: auto;
-    height: 180px;
+    height: auto;
     margin: 20px;
   }
-  #nav2{
-    margin-top: 60px;
+  .leftrentag {
+    font-size: 15px;
+  }
+  #display {
+    margin-top: 0px;
+    margin-bottom: 50px;
   }
 
+  /***Panneau de droite***/
   #rightpannel {
     width: 100%;
     height: 650px;
@@ -831,11 +837,30 @@ a {
     background-color: #f2f2f2;
     border-radius: 0px;
   }
-  
   #blocimg {
     padding-left: 0px;
   }
- 
+  .rightlinkcard {
+    height: 150px;
+    margin: 15px 0px;
+  }
+  .rightcard {
+    height: 150px;
+  }
+  .rightstylimage {
+    height: 143px;
+    margin-left: 3px;
+    border-radius: 20px 0px 0px 20px;
+  }
+  .bis {
+    width: 45%;
+  }
+  .rightrentag {
+    font-size: 18px;
+  }
+  .rightfontcard {
+    font-size: 18px;
+  }
 
   /***Activités***/
   #activitiesection {
@@ -845,18 +870,17 @@ a {
     margin-bottom: 0px;
     padding: 100px 40px 0px 10px;
   }
-   #titlezone {
+  #titlezone {
     padding-left: 0px;
     margin-right: 90px;
   }
-
   #activityheading {
     margin-top: 30px;
     position: absolute;
     top: 30px;
     padding-left: 20px;
   }
-  #boxactivities {
+  #parentboxactivities {
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -867,39 +891,15 @@ a {
     width: auto;
     overflow: hidden;
   }
-  .linkcard2 {
-    height: 150px;
-    margin: 15px 0px;
-  }
-  .rightcard {
-    height: 150px;
-  }
-  .stylimage2 {
-    height: 143px;
-    margin-left: 3px;
-    border-radius: 20px 0px 0px 20px;
-  }
-  .bis {
-    width: 45%;
-  }
-  .box1and3 {
+  .childboxactivities {
     width: 45%;
     margin-bottom: 20px;
   }
-  .box2 {
-    width: 45%;
-    margin-bottom: 20px;
-  }
-  .whitecard3 {
+  .box2cardtop {
     height: 236px;
   }
-  .styleimage4 {
+  .styleboxtopimage {
     height: 187px;
-  }
-
-  .box4 {
-    width: 45%;
-    margin-bottom: 20px;
   }
 
   /***footer***/
@@ -915,7 +915,12 @@ a {
     margin-left: 0px;
     margin-right: 88px;
   }
-
+  .footerfont {
+    margin-left: 45px;
+  }
+  .footerlist {
+    padding-left: 35px;
+  }
 }
 
 /**********pour les iphone8*********/
@@ -929,7 +934,7 @@ a {
     max-width: 100%;
   }
   header {
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 0px;
     margin-right: 0px;
     width: auto;
@@ -971,6 +976,7 @@ a {
   h1 {
     font-size: 25px;
     margin-left: 19px;
+    padding-top: 180px;
   }
   #subtitle {
     font-size: 17px;
@@ -1044,7 +1050,7 @@ a {
   }
   .boldfont {
     padding-right: 10px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   /***Les hébergements***/
@@ -1070,86 +1076,103 @@ a {
     flex-direction: column-reverse;
     margin-bottom: 20px;
     margin-left: 0px;
+    height: auto;
   }
   /***Les plus populaires***/
 
   #rightpannel {
-    width: 90%;
-    flex: 0;
+    width: 100%;
+    display: block;
     height: auto;
-    padding: 23.9px 30px 30px 17px;
+    padding: 30px 0px 30px 0px;
     margin: 0px;
     border-radius: 0px;
     background-size: cover;
+  }
+  h3 {
+    margin-left: 16px;
   }
   .blackstar {
     right: -30px;
   }
   #blocimg {
-    justify-content: center;
+    margin: auto;
+    width: 90%;
+    padding: 0px;
   }
   .rightcard {
     margin-bottom: 0px;
     width: auto;
-    height: 137px;
+    height: 150px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 18px;
     box-shadow: 1px 1px 12px 3px #f9fbfe;
   }
-  .stylimage2 {
+  .imgzone {
+    height: 142px;
+  }
+  .rightstylimage {
     margin-bottom: 4px;
     margin-top: 4px;
     margin-left: 4px;
     border-radius: 18px 0px 0px 18px;
-    height: 129px;
+    height: 142px;
     width: 34%;
   }
-  .rentag2 {
+  .textzone {
+    height: 132px;
+    width: 60%;
+  }
+  .rightrentag {
     font-size: 20px;
   }
-  .fontcard2 {
+  .rightfontcard {
     font-size: 17px;
   }
   .bluestars2 {
-    padding: 4px;
-    font-size: 15px;
+    padding: 5px;
+    font-size: 13px;
     color: #0065fc;
   }
   .graystars2 {
-    padding: 4px;
-    font-size: 15px;
-    color: rgb(183, 176, 176)
+    padding: 5px;
+    font-size: 13px;
+    color: rgb(183, 176, 176);
   }
-
 
   /***Panneau de gauche Les hébergements***/
   h3 {
     margin: 0px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
   }
   #leftpanel {
     width: 90%;
     height: auto;
     background: none;
+    margin: 10px auto;
   }
   .lign {
     display: block;
-    height: 635px;
+    height: auto;
+    margin-bottom: 0px;
   }
-  .linkcard2 {
-    margin: auto;
+  .leftlinkcard {
+    margin: 0px auto;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
   }
-  .whitecard {
-    height: 195px;
+  .leftcard {
+    height: auto;
     box-shadow: 0px 5px 5px 2px #e8effa;
+    margin-bottom: 15px;
   }
-  #nav2 {
-    margin: 30px 0px 0px 0px;
-  }
-  .rentag1 {
+  .leftrentag {
     font-size: 18px;
   }
-  .fontcard1 {
+  .leftfontcard {
     font-size: 15.7px;
     margin-bottom: 5px;
   }
@@ -1161,94 +1184,103 @@ a {
   .graystars1 {
     padding: 2px;
     font-size: 12px;
-    color:rgb(183, 176, 176);
+    color: rgb(183, 176, 176);
   }
-
+  #display {
+    margin: 40px 0px 0px 0px;
+  }
   /***Les activités***/
   #activitiesection {
-    width: 99.8%;
+    width: auto;
+    min-width: 100%;
     padding: 0px;
     overflow: hidden;
+    margin: auto;
+  }
+  #marker {
+    top: -180px;
   }
   #activityheading {
+    margin-top: 0px;
     margin-left: 20px;
   }
-  #boxactivities {
-    
+  #parentboxactivities {
     display: block;
     height: auto;
     margin: 20px auto;
-    padding: 10px 0px 20px 0px;
+    margin-bottom: 0px;
+    padding: 10px 0px 0px 0px;
   }
+
+  /***Box 1 et 3***/
   .linkbox1and3 {
-    height: 210px;
+    height: auto;
+    margin-bottom: 5px;
   }
-  .box1and3 {
+  .childboxactivities {
     width: auto;
     height: auto;
     margin-bottom: 20px;
   }
-  .whitecard2 {
+  .box1and3card {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
     height: 210px;
   }
-  .stylimage3 {
+  .stylimagebox1and3 {
     width: 100%;
     height: 156px;
   }
   /***box 2***/
-  .box2 {
-    width: auto;
-    height: auto;
-    margin-bottom: 20px;
-  }
   /***image haut***/
   #linkbox2top {
     text-decoration: none;
     width: auto;
-    height: 180px;
-    margin-bottom: 20px;
+    height: auto;
+    margin-bottom: 5px;
   }
-  .whitecard3 {
+  .box2cardtop {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    height: 180px;
+    height: 210px;
     margin-bottom: 20px;
   }
-  .styleimage4 {
+  .stylebox2topimage {
     width: 100%;
-    height: 130px;
+    height: 156px;
   }
   /***image bas***/
-  .whitecard4 {
+  #linkbox2bottom {
+    height: auto;
+    margin-bottom: 5px;
+  }
+  .box2cardbottom {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    margin-bottom: 20px;
-    height: 183px;
+    margin-bottom: 0px;
+    height: 210px;
   }
-  .stylimage5 {
+  .stylebox2bottomimage {
     width: 100%;
-    height: 135px;
+    height: 156px;
   }
   /***box4***/
-  .box4 {
-    width: auto;
-    height: auto;
-  }
   .linkbox4 {
-    height: 210px;
-    margin-bottom: 20px;
+    height: auto;
+    margin-bottom: 5px;
   }
-  .whitecard5 {
+  .box4card {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
     margin-bottom: 20px;
     height: 210px;
+  }
+  .stylimagebox4 {
+    height: 156px;
   }
   .tagactivity {
     font-size: 17px;
@@ -1257,9 +1289,11 @@ a {
   footer {
     width: auto;
     overflow: hidden;
-    height:fit-content;
+    height: fit-content;
+    margin-top: 0px;
   }
   #footercontainer {
+    width: 100%;
     flex-direction: column;
     height: auto;
   }
@@ -1276,7 +1310,7 @@ a {
     padding-bottom: 0px;
     padding-left: 10px;
   }
-  .footerli{
+  .footerli {
     font-size: 20px;
     margin-bottom: auto;
   }
