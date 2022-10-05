@@ -326,13 +326,13 @@ h4 {
   margin-left: 7px;
   margin-top: 0px;
 }
-.bluestars1 {
+.leftbluestars {
   font-size: 12px;
   padding: 2px;
   color: #0065fc;
   width: 2%;
 }
-.graystars1 {
+.leftgraystars {
   font-size: 12px;
   padding: 2px;
   color: rgb(183, 176, 176);
@@ -433,13 +433,13 @@ h4 {
   bottom: 10px;
   left: 30px;
 }
-.bluestars2 {
+.rightbluestars {
   font-size: 13px;
   padding: 4px;
   color: #0065fc;
   width: 2%;
 }
-.graystars2 {
+.rightgraystars {
   font-size: 13px;
   padding: 4px;
   color: rgb(183, 176, 176);
@@ -1130,12 +1130,12 @@ a {
   .rightfontcard {
     font-size: 17px;
   }
-  .bluestars2 {
+  .rightbluestars {
     padding: 5px;
     font-size: 13px;
     color: #0065fc;
   }
-  .graystars2 {
+  .rightgraystars {
     padding: 5px;
     font-size: 13px;
     color: rgb(183, 176, 176);
@@ -1176,12 +1176,12 @@ a {
     font-size: 15.7px;
     margin-bottom: 5px;
   }
-  .bluestars1 {
+  .leftbluestars {
     padding: 2px;
     font-size: 12px;
     color: #0065fc;
   }
-  .graystars1 {
+  .leftgraystars {
     padding: 2px;
     font-size: 12px;
     color: rgb(183, 176, 176);
