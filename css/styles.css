@@ -1037,7 +1037,7 @@ a {
   }
   .container {
     margin: 0px 0px 15px 20px;
-    padding-right: 15px;
+    padding-right: 10px;
     width: fit-content;
   }
   .circle1 {
@@ -1049,7 +1049,7 @@ a {
   }
   .boldfont {
     padding-right: 16px;
-    font-size: 14px;
+    font-size: 17px;
   }
 
   /***Les hébergements***/
