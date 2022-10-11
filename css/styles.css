@@ -993,12 +993,13 @@ a {
     padding: 14px 17px;
   }
   #locationsearch {
-    width: 80%;
+    width: 75%;
     padding: 14px 0px 14px 17px;
   }
   form input::placeholder {
     font-size: 19px;
     padding-right: 0px;
+
   }
   #searchtext {
     display: none;
