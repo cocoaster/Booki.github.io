@@ -5,16 +5,17 @@
 html,
 body {
   width: auto;
-  overflow-x: hidden;
   height: auto;
-  font-family: "Raleway", sans-serif;
+  max-width: 1400px;
+  overflow-x: hidden;
+  font-family: raleway, sans-serif;
 }
 
 /***Onglets en haut à droite***/
 header {
   width: 100%;
   max-width: none;
-  min-width: 400px;
+  min-width: 330px;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -602,7 +603,6 @@ footer {
   margin: 65px 0px 0px 0px;
   background-color: #f2f2f2;
   background-size: cover;
-
   padding: 30px 20px 10px 20px;
 }
 #footercontainer {
@@ -716,7 +716,7 @@ a {
 }
 
 /***pour les tablettes***/
-@media screen and (max-width: 992px) and (min-width: 768px) {
+@media screen and (max-width: 992px) and (min-width: 769px) {
   html,
   body {
     margin: 0px;
@@ -780,7 +780,7 @@ a {
     font-size: 10px;
   }
   .boldfont {
-    font-size: 13px;
+    font-size: 11px;
   }
   /***hébergements***/
   #rentsection {
@@ -838,7 +838,7 @@ a {
     border-radius: 0px;
   }
   #blocimg {
-    padding-left: 0px;
+    padding-left: 10px;
   }
   .rightlinkcard {
     height: 150px;
@@ -984,11 +984,9 @@ a {
     margin-top: 10px;
   }
   #searchbar {
-    position: relative;
-    margin-left: 18px;
-    margin-bottom: 0px;
+    position: relative;   
     width: 87%;
-    justify-content: center;
+    margin-left: 19px;
   }
 
   #locationicon {
@@ -1050,7 +1048,7 @@ a {
   }
   .boldfont {
     padding-right: 10px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   /***Les hébergements***/
@@ -1093,7 +1091,7 @@ a {
     margin-left: 16px;
   }
   .blackstar {
-    right: -10px;
+    right: -4px;
   }
   #blocimg {
     margin: auto;
@@ -1126,9 +1124,11 @@ a {
   }
   .rightrentag {
     font-size: 20px;
+    margin-left: 0px;
   }
   .rightfontcard {
     font-size: 17px;
+    margin-left: 0px;
   }
   .rightbluestars {
     padding: 5px;
@@ -1311,7 +1311,7 @@ a {
     padding-left: 10px;
   }
   .footerli {
-    font-size: 20px;
+    font-size: 17px;
     margin-bottom: auto;
   }
 }
