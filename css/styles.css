@@ -272,7 +272,7 @@ form {
 }
 #leftpanel {
   border-radius: 20px;
-  width: 63%;
+  width: 65%;
   height: 623px;
   padding: 20px;
   background-color: #f2f2f2;
@@ -361,7 +361,7 @@ h4 {
 
 /***Panneau de droite***/
 #rightpannel {
-  width: 31%;
+  width: 32%;
   height: 623px;
   padding: 20px 15px 0px 15px;
   margin-bottom: 0px;
@@ -613,7 +613,7 @@ footer {
   margin: 65px 0px 0px 0px;
   background-color: #f2f2f2;
   background-size: cover;
-  padding: 30px 20px 0px 20px;
+  padding: 30px 20px 30px 20px;
 }
 #footercontainer {
   width: 80%;
