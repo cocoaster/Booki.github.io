@@ -990,7 +990,7 @@ footer{
   #tablist a {
     display: block;
     min-height: 100%;
-    padding: 4px 0px;
+    padding: 0px 0px 19px 0px;
     border-bottom: 4px solid #f2f2f2;
   }
   #tablist a:hover {
