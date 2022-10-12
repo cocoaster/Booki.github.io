@@ -8,6 +8,7 @@ html,
 body {
   width: auto;
   height: auto;
+  margin-bottom: 0px;
   display: flex;
   flex-direction: column;
   min-height: 100vh; 
@@ -273,7 +274,7 @@ form {
 #leftpanel {
   border-radius: 20px;
   width: 65%;
-  height: 623px;
+  height: 680px;
   padding: 20px;
   background-color: #f2f2f2;
   margin-right: 30px;
@@ -362,7 +363,7 @@ h4 {
 /***Panneau de droite***/
 #rightpannel {
   width: 32%;
-  height: 623px;
+  height: 680px;
   padding: 20px 15px 0px 15px;
   margin-bottom: 0px;
   background-color: #f2f2f2;
@@ -386,7 +387,7 @@ h4 {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
-  height: 510px;
+  height: 567px;
 }
 .rightlinkcard {
   text-decoration: none;
