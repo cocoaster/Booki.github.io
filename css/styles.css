@@ -5,11 +5,11 @@
 html,
 body {
   width: auto;
-  height: auto;
-  
+  height: auto; 
   overflow-x: hidden;
   font-family: raleway, sans-serif;
 }
+body {position: relative;}
 
 /***Onglets en haut à droite***/
 header {
@@ -606,7 +606,7 @@ footer {
   margin: 65px 0px 0px 0px;
   background-color: #f2f2f2;
   background-size: cover;
-  padding: 30px 20px 10px 20px;
+  padding: 30px 20px 0px 20px;
 }
 #footercontainer {
   width: 80%;
@@ -918,6 +918,8 @@ footer{
 
   /***footer***/
   footer {
+    position:absolute;
+    bottom: 0px;
     margin-top: 65px;
     margin-left: 0px;
     justify-content: space-around;
