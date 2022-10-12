@@ -250,8 +250,8 @@ form {
 }
 #symbolinfo {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 44%;
+  left: 53%;
   transform: translate(-50%, -50%);
   color: #0065fc;
   border-radius: 100px;
@@ -274,7 +274,7 @@ form {
 #leftpanel {
   border-radius: 20px;
   width: 65%;
-  height: 680px;
+  height: 660px;
   padding: 20px;
   background-color: #f2f2f2;
   margin-right: 30px;
@@ -287,7 +287,7 @@ h3 {
 .lign {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 0px;
+  margin-bottom: 17px;
 }
 .leftlinkcard {
   text-decoration: none;
@@ -298,7 +298,7 @@ h3 {
 .leftcard {
   width: 100%;
   height: auto;
-  padding-bottom: 13px;
+  padding-bottom: 9px;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 5px 15px 10px #e8effa;
@@ -357,13 +357,13 @@ h4 {
   text-shadow: 2px 0px 4px rgba(185, 185, 185, 0.99);
 }
 #display {
-  margin-top: 35px;
+  margin-top: 23px;
 }
 
 /***Panneau de droite***/
 #rightpannel {
   width: 32%;
-  height: 680px;
+  height: 660px;
   padding: 20px 15px 0px 15px;
   margin-bottom: 0px;
   background-color: #f2f2f2;
@@ -387,7 +387,7 @@ h4 {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
-  height: 567px;
+  height: 535px;
   margin-top: 9px;
 }
 .rightlinkcard {
@@ -831,7 +831,7 @@ footer{
   }
   .lign {
     width: 100%;
-    margin-bottom: 33px;
+    margin-bottom: 0px;
   }
   .leftlinkcard {
     padding: 0px;
@@ -847,7 +847,7 @@ footer{
   }
   #display {
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 
   /***Panneau de droite***/
