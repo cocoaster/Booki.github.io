@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
   font-family: raleway, sans-serif;
 }
-body {position: relative;}
+
 
 /***Onglets en haut à droite***/
 header {
@@ -67,6 +67,8 @@ header {
 
 main {
   width: auto;
+  height: auto;
+  margin-bottom: 10px;
 }
 /*** section1 Recherche et Filtres***/
 #searchandfiltersection {
@@ -601,6 +603,7 @@ h4 {
 
 /***footer***/
 footer {
+  bottom: 0px;
   width: 100%;
   height: auto;
   margin: 65px 0px 0px 0px;
@@ -656,7 +659,7 @@ a {
   margin-right: auto;
 }
 footer{
-  height: 100%;
+  height: auto;
 }
 }
 
