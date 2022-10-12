@@ -18,8 +18,7 @@ body {
 
 /***Onglets en haut à droite***/
 header {
-  width: 100%;
- 
+  width: 100%; 
   min-width: 330px;
   display: flex;
   justify-content: space-between;
@@ -27,7 +26,7 @@ header {
   z-index: 1;
   background-color: #ffffff;
   margin: 0px;
-  padding-right: 50px;
+  padding-right: 20px;
   top: 0px;
   right: 0px;
   left: 0px;
