@@ -338,13 +338,13 @@ h4 {
 }
 .leftbluestars {
   font-size: 12px;
-  padding: 2px;
+  padding: 5px;
   color: #0065fc;
   width: 2%;
 }
 .leftgraystars {
   font-size: 12px;
-  padding: 2px;
+  padding: 5px;
   color: rgb(183, 176, 176);
   width: 2%;
 }
@@ -445,13 +445,13 @@ h4 {
 }
 .rightbluestars {
   font-size: 13px;
-  padding: 4px;
+  padding: 6px;
   color: #0065fc;
   width: 2%;
 }
 .rightgraystars {
   font-size: 13px;
-  padding: 4px;
+  padding: 6px;
   color: rgb(183, 176, 176);
   width: 2%;
 }
