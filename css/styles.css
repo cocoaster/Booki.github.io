@@ -660,7 +660,9 @@ a {
   padding-bottom: 15px;
   font-size: 14px;
 }
-
+#pearlIt{
+  display: none;
+}
 /***media queries***/
 /***pour les écrans au-desuus de 1400px***/
 @media screen and (min-width: 1400px) {
